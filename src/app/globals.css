@@ -1,0 +1,62 @@
+:root {
+  --slate-800: rgb(30 41 59);
+  --theme-primary: rgb(2 6 23);
+  --theme-secondary: rgb(15 23 42);
+  --slate-800: rgb(30 41 59);
+  --primaryColor: rgb(15 23 42);
+  --secondaryColor: rgb(30 41 59);
+  --indigo-50: rgb(238 242 255);
+  --indigo-100: rgb(224 231 255);
+  --indigo-200: rgb(199 210 254);
+  --indigo-300: rgb(165 180 252);
+  --indigo-500: rgb(99 102 241);
+
+  --red-500: rgb(239 68 68);
+  --green-500: rgb(34 197 94);
+  --orange-300: rgb(253 186 116);
+  --orange-400: rgb(251 146 60);
+  --orange-500: rgb(249 115 22);
+
+  --padding: .5rem;
+  --headerHeight: 2.5rem;
+  --borderRadius: .5rem;
+  --sideContainerWidth: 17rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  color: var(--indigo-100);
+  background-color: var(--theme-primary);
+}
+
+@media ((min-width: 1920px) and (max-width: 3839px)) {
+  html {
+    font-size: 1.5rem;
+  }
+}
+
+@media ((min-width: 3840px)) {
+  html {
+    font-size: 3rem;
+  }
+}
+
+::-webkit-scrollbar {
+  width: .25rem;
+  background-color: var(--theme-primary);
+  scrollbar-gutter: stable;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--indigo-500);
+}

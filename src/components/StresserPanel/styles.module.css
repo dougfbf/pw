@@ -1,0 +1,114 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--borderRadius);
+    background-color: var(--theme-secondary);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    height: var(--headerHeight);
+    justify-content: space-between;
+}
+
+.header .label {
+    gap: .25rem;
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.header .label svg {
+    color: var(--indigo-500);
+    width: calc(var(--headerHeight) * .5);
+    height: calc(var(--headerHeight) * .5);
+}
+
+.body {
+    gap: .5rem;
+    display: flex;
+    padding: 0 var(--padding) var(--padding) var(--padding);
+    flex-direction: column;
+}
+
+.form {
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.field .label {
+    opacity: .9;
+    font-size: .8rem;
+    color: var(--indigo-200);
+}
+
+.field input {
+    all: unset;
+    width: 100%;
+    padding: .5rem;
+    box-sizing: border-box;
+    color: var(--indigo-200);
+    border-radius: var(--borderRadius);
+    border: .1rem solid var(--slate-800);
+    background-color: var(--theme-secondary);
+    transition: border 150ms ease;
+}
+
+.field input:focus {
+    border: .1rem solid var(--indigo-500);
+}
+
+.field input::placeholder {
+    opacity: .5;
+    color: var(--indigo-200);
+}
+
+.field input:disabled {
+    opacity: .75;
+    cursor: not-allowed;
+}
+
+.horizontalGroup {
+    gap: .5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.sendButton {
+    all: unset;
+    gap: .5rem;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+    padding: var(--padding);
+    border-radius: var(--borderRadius);
+    background-color: var(--indigo-500);
+    transition: scale 150ms ease;
+}
+
+.sendButton:active {
+    scale: .95;
+}
+
+.sendButton:disabled {
+    opacity: .75;
+    cursor: not-allowed;
+}
+
+.sendButton svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--indigo-50);
+}

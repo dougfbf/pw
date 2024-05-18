@@ -1,0 +1,44 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--borderRadius);
+    background-color: var(--theme-secondary);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    height: var(--headerHeight);
+    justify-content: space-between;
+}
+
+.header .label {
+    color: rgb(220 252 231);
+    gap: .25rem;
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.header .label svg {
+    color: rgb(34 197 94);
+    width: calc(var(--headerHeight) * .5);
+    height: calc(var(--headerHeight) * .5);
+}
+
+.body {
+    color: rgb(220 252 231);
+    gap: .5rem;
+    display: flex;
+    padding: 0 var(--padding) var(--padding) var(--padding);
+    flex-direction: column;
+}
+
+.body a {
+    all: unset;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(34 197 94);
+}

@@ -1,0 +1,68 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--borderRadius);
+    background-color: var(--theme-secondary);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    height: var(--headerHeight);
+    justify-content: space-between;
+}
+
+.header .label {
+    gap: .5rem;
+    display: flex;
+    font-size: 1.25rem;
+    align-items: center;
+}
+
+.header .label svg {
+    color: var(--indigo-500);
+    width: calc(var(--headerHeight) * .75);
+    height: calc(var(--headerHeight) * .75);
+}
+
+.body {
+    gap: .5rem;
+    display: flex;
+    padding: 0 var(--padding) var(--padding) var(--padding);
+    flex-direction: column;
+}
+
+.telegram {
+    all: unset;
+    gap: .5rem;
+    display: flex;
+    cursor: pointer;
+    font-weight: bold;
+    align-items: center;
+    color: #24a1dd;
+}
+
+.telegram .img {
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.stresserUs {
+    gap: .5rem;
+    display: flex;
+    align-items: center;
+}
+
+.stresserUs .content {
+    display: flex;
+    text-align: center;
+}
+
+.stresserUs svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--indigo-500);
+}

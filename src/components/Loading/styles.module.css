@@ -1,0 +1,154 @@
+.main {
+    gap: 2.5rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main h3 {
+    color: var(--indigo-200);
+}
+
+@-webkit-keyframes loading {
+
+    0%,
+    20%,
+    80%,
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    30%,
+    70% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes loading {
+
+    0%,
+    20%,
+    80%,
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    30%,
+    70% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.loading {
+    height: 1.5rem;
+    position: relative;
+    width: 1.5rem;
+}
+
+.loading div {
+    -webkit-animation: loading 1.4s infinite backwards;
+    animation: loading 1.4s infinite backwards;
+    background: var(--indigo-500);
+    height: 0.75rem;
+    margin-top: 0.375rem;
+    position: absolute;
+    width: 1.5rem;
+}
+
+.loading div:after,
+.loading div:before {
+    content: '';
+    border-left: 0.75rem solid transparent;
+    border-right: 0.75rem solid transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.loading div:after {
+    top: -0.375rem;
+    border-bottom: 0.375rem solid var(--indigo-500);
+}
+
+.loading div:before {
+    bottom: -0.375rem;
+    border-top: 0.375rem solid var(--indigo-500);
+}
+
+.loading div:nth-child(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    left: -1.75rem;
+    top: 0;
+}
+
+.loading div:nth-child(2) {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+    left: -0.875rem;
+    top: 1.375rem;
+}
+
+.loading div:nth-child(3) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    left: 0.875rem;
+    top: 1.375rem;
+}
+
+.loading div:nth-child(4) {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    left: 1.75rem;
+    top: 0;
+}
+
+.loading div:nth-child(5) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    left: 0.875rem;
+    top: -1.375rem;
+}
+
+.loading div:nth-child(6) {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    left: -0.875rem;
+    top: -1.375rem;
+}
+
+.loading div:nth-child(7) {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+    left: 0;
+    top: 0;
+}
+
+.scaleIn {
+    animation: scaleIn 750ms ease;
+}
+
+@keyframes scaleIn {
+    0% {
+        scale: 0;
+    }
+
+    60% {
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1
+    }
+}

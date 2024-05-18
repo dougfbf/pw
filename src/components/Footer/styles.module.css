@@ -1,0 +1,22 @@
+.footerWrapper {
+    width: 100%;
+    display: flex;
+    padding: var(--padding);
+    border-radius: var(--borderRadius);
+    flex: 1;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.footer a {
+    all: unset;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--indigo-500);
+}
